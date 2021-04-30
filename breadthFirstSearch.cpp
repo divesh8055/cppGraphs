@@ -26,7 +26,7 @@ void BFS(int n, vector<int> adj[])
                     if(!visited[it])
                         q.push(it);
                         //marking the pushed node as visited in visited vector
-                        vis[it]=1;
+                        visited[it]=1;
                 }
             }
         }
@@ -57,6 +57,6 @@ int main(){
         adj[v].push_back(u);
     }
     //passing the list into the BFS function
-    BFS(n ,adj)
+    BFS(n ,adj);
     return 0;
 }

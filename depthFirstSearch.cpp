@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void DFS(int node, vector<int> adj[], veector<int> &visited)
+void DFS(int node, vector<int> adj[], vector<int> &visited)
 {
     //printing the node which gets visited
     cout<<node<<" ";
@@ -14,7 +14,7 @@ void DFS(int node, vector<int> adj[], veector<int> &visited)
     {
         if(!visited[it])
         {
-            DFS(i, adj, visited);
+            DFS(it, adj, visited);
         }
     }
 }
