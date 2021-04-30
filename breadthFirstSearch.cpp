@@ -6,7 +6,7 @@ void BFS(int n, vector<int> adj[])
 {
     //initializing a visited vector
     vector<int> visited(n+1, 0);
-    //for disconnected components, we are checking for each node
+    //for disconnected components, we are checking for each node.
     for(int i=0; i<n; i++)
     {
         if(!visited[i])
